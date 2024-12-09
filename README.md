@@ -8,7 +8,7 @@ It's a pet-project plugin for NeoVim that adds simple search menu
     1. Create a new .lua file in your plugins directory
     2. Paste these lines of code into it
     3. Enjoy WorstySearchy!
-```
+```lua
 return {
     "grommoott/worstysearchy",
     opts = {
