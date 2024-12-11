@@ -6,10 +6,8 @@ local function init(opts)
 end
 
 -- @param opts? worstysearchy.Config
-local function setup(opts)
-	vim.print("Hello world")
+function M.setup(opts)
+	vim.notify("Hello world!", vim.log.levels.INFO, { title = "WorstySearchy" })
 end
-
-M.setup = setup
 
 return M
