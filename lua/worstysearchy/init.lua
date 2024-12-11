@@ -1,7 +1,8 @@
 local M = {}
 
 local function init(opts)
-	require("worstysearchy.worstysearchy").Init(opts)
+	vim.print("Hello world!")
+	-- require("worstysearchy.worstysearchy").Init(opts)
 end
 
 -- @param opts? worstysearchy.Config
