@@ -7,11 +7,7 @@ end
 
 -- @param opts? worstysearchy.Config
 local function setup(opts)
-	vim.api.nvim_create_autocmd("VimEnter", {
-		callback = function()
-			init(opts)
-		end,
-	})
+	vim.print("Hello world")
 end
 
 M.setup = setup
