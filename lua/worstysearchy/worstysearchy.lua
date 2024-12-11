@@ -39,8 +39,9 @@ end
 
 local function init(opts)
 	settings = opts
+	local hotkey = settings.hotkey or "<leader>si"
 
-	vim.keymap.set("n", settings.hotkey, function()
+	vim.keymap.set("n", hotkey, function()
 		worsty_search()
 	end)
 end
