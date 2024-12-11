@@ -2,7 +2,7 @@ local M = {}
 
 -- @param opts? worstysearchy.Config
 local function setup(opts)
-	require("worstysearchy").Init(opts)
+	require("worstysearchy.worstysearchy").Init(opts)
 end
 
 M.setup = setup
