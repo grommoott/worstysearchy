@@ -1,4 +1,5 @@
 local settings = {}
+local package = {}
 
 local function search(text)
 	local linesCount = vim.api.nvim_buf_line_count(0)
@@ -36,10 +37,13 @@ local function worsty_search()
 	end)
 end
 
-function Init(opts)
+local function init(opts)
 	settings = opts
 
 	vim.keymap.set("n", settings.hotkey, function()
 		worsty_search()
 	end)
 end
+
+package.init = init
+return package
